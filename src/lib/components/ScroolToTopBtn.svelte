@@ -1,21 +1,21 @@
 <script>
-	let showScrollTopBtn = $state(true);
+	let showScroolTopBtn = $state(true);
 
-	function handleScrollToTop() {
-		showScrollTopBtn = window.scrollY > 400;
+	function handleScroolToTop() {
+		showScroolTopBtn = window.scrollY > 400;
 	}
 
-	function scrollToTop() {
+	function scroolToTop() {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	}
 </script>
 
-{#if showScrollTopBtn}
+{#if showScroolTopBtn}
 	<button
 		type="button"
-		aria-label="Scroll to top"
+		aria-label="Retour en haut"
 		class="fixed right-4 bottom-4 rounded-full border border-bakery-dark px-2 py-2 text-bakery-dark hover:bg-bakery-muted hover:text-bakery-accent-soft"
-		onclick={scrollToTop}
+		onclick={scroolToTop}
 	>
 		<svg
 			viewBox="0 0 20 20"
@@ -30,4 +30,4 @@
 	</button>
 {/if}
 
-<svelte:window onscroll={handleScrollToTop} />
+<svelte:window onscroll={handleScroolToTop} />
