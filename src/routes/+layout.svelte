@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<div class="mx-auto min-h-screen max-w-5xl">
+<div class="mx-auto min-h-screen bg-bakery-cream">
 	<Header />
 	<main>{@render children()}</main>
 	<Footer />
