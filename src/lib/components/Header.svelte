@@ -21,16 +21,16 @@
 				</div>
 				<span class=" text-[26px] text-bakery-dark">A K Boulangerie</span>
 			</a>
-			<nav class="relative grid grid-cols-4 p-1">
+			<nav class="relative grid grid-cols-4">
 				{#each navLinks as { href, label } (href)}
 					<a
 						{href}
-						class="relative z-10 px-3 py-2 text-center text-bakery-dark hover:text-bakery-accent-soft"
+						class="z-10 px-3 py-2 text-center text-bakery-dark hover:text-bakery-accent-soft"
 						onclick={() => (activeNavLink = href)}>{label}</a
 					>
 				{/each}
 				<div
-					class="absolute bottom-1 left-1 h-px w-[calc((100%-0.5rem)/4)] bg-bakery-muted transition-transform duration-200"
+					class="absolute bottom-0 left-0 h-px w-1/4 bg-bakery-muted transition-transform duration-200"
 					class:translate-x-0={activeNavLink === '#accueil'}
 					class:translate-x-full={activeNavLink === '#produits'}
 					class:translate-x-[200%]={activeNavLink === '#savoir-faire'}
