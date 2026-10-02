@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@200..800&display=swap');
-
 @theme {
 	--color-bakery-cream: #f7f2ea;
 	--color-bakery-sand: #ede4d6;
