@@ -7,6 +7,7 @@
 		{ href: '#savoir-faire', label: 'Savoir-faire' },
 		{ href: '#horaires', label: 'Horaires' }
 	];
+	let activeNavLink = $state('');
 </script>
 
 <header class="bg-bakery-cream">
@@ -22,7 +23,13 @@
 			</a>
 			<nav class="flex gap-4">
 				{#each navLinks as { href, label } (href)}
-					<a {href} class="text-bakery-dark hover:text-bakery-accent-soft">{label}</a>
+					<a
+						{href}
+						class="text-bakery-dark hover:text-bakery-accent-soft"
+						onclick={() => (activeNavLink = href)}
+						class:border-b={activeNavLink === href}
+						class:border-bakery-muted={activeNavLink === href}>{label}</a
+					>
 				{/each}
 			</nav>
 			<a
