@@ -1,1 +1,16 @@
 @import 'tailwindcss';
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@200..800&display=swap');
+
+@theme {
+	--color-bakery-cream: #f7f2ea;
+	--color-bakery-sand: #ede4d6;
+	--color-bakery-dark: #1e1a16;
+	--color-bakery-brown: #3a2a1f;
+	--color-bakery-muted: #6b5b4d;
+	--color-bakery-accent: #b5562f;
+	--color-bakery-accent-soft: #e2a27f;
+	--color-bakery-dark-section: #2b2019;
+	--font-sans: 'Manrope', sans-serif;
+	--font-serif: 'Instrument Serif', serif;
+}
