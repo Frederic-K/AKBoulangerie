@@ -21,17 +21,29 @@
 				</div>
 				<span class=" text-[26px] text-bakery-dark">A K Boulangerie</span>
 			</a>
-			<nav class="r relative grid grid-cols-4">
+			<nav class="relative grid grid-cols-4 gap-2 px-2">
 				{#each navLinks as { href, label } (href)}
 					<a
 						{href}
-						class="text-bakery-dark hover:text-bakery-accent-soft"
+						class="text-center text-bakery-dark hover:text-bakery-accent-soft"
 						onclick={() => (activeNavLink = href)}>{label}</a
 					>
 				{/each}
 				<div
-					class="absolute bottom-0 left-0 w-1/4 border-b border-bakery-muted transition-transform duration-200"
+					class="absolute bottom-0 left-0 h-px w-1/4 bg-bakery-muted transition-transform duration-200"
+					class:translate-x-0={activeNavLink === '#accueil'}
+					class:translate-x-full={activeNavLink === '#produits'}
+					class:translate-x-[200%]={activeNavLink === '#savoir-faire'}
+					class:translate-x-[300%]={activeNavLink === '#horaires'}
 				></div>
+				<!-- <div
+					class="absolute top-1 bottom-1 left-1 w-[calc((100%-0.5rem)/4)] rounded-lg bg-white shadow-sm transition-transform duration-200"
+					class:translate-x-0={activeNavLink === '#accueil'}
+					class:translate-x-full={activeNavLink === '#produits'}
+					class:translate-x-[200%]={activeNavLink === '#savoir-faire'}
+					class:translate-x-[300%]={activeNavLink === '#horaires'}
+					aria-hidden="true"
+				></div> -->
 			</nav>
 			<a
 				href="#nous-trouver"
