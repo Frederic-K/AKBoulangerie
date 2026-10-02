@@ -21,16 +21,17 @@
 				</div>
 				<span class=" text-[26px] text-bakery-dark">A K Boulangerie</span>
 			</a>
-			<nav class="flex gap-4">
+			<nav class="r relative grid grid-cols-4">
 				{#each navLinks as { href, label } (href)}
 					<a
 						{href}
 						class="text-bakery-dark hover:text-bakery-accent-soft"
-						onclick={() => (activeNavLink = href)}
-						class:border-b={activeNavLink === href}
-						class:border-bakery-muted={activeNavLink === href}>{label}</a
+						onclick={() => (activeNavLink = href)}>{label}</a
 					>
 				{/each}
+				<div
+					class="absolute bottom-0 left-0 w-1/4 border-b border-bakery-muted transition-transform duration-200"
+				></div>
 			</nav>
 			<a
 				href="#nous-trouver"
