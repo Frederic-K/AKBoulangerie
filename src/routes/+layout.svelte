@@ -8,8 +8,8 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<div>
-	<Header class="flex min-h-screen flex-col" />
+<div class="mx-auto min-h-screen max-w-5xl">
+	<Header />
 	<main>{@render children()}</main>
 	<Footer />
 </div>
