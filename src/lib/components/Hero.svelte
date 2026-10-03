@@ -3,26 +3,26 @@
 	import heroBreadImage from '$lib/assets/hero-bread.webp';
 </script>
 
-<section class="bg-amber-800">
+<section class="">
 	<Container>
 		<div class="grid grid-cols-2 gap-20 px-30 py-12">
 			<div>
-				<div class=" mb-4 font-sans text-xs font-bold tracking-widest text-bakery-accent uppercase">
+				<div class=" mb-4 text-xs font-bold tracking-widest text-bakery-accent uppercase">
 					boulangerie artisanale - strasbourg
 				</div>
-				<div class=" mb-12 font-serif text-7xl leading-[0.98] tracking-tight">
-					<h1>
-						Le pain du jour, <em class="block text-bakery-brown">façonné à la main.</em>
-					</h1>
-				</div>
-				<div class="text-sans text-md mb-12 text-bakery-brown">
+
+				<h1 class=" mb-8 font-serif text-7xl leading-[0.98] tracking-tight">
+					Le pain du jour, <em class="block text-bakery-brown">façonné à la main.</em>
+				</h1>
+
+				<p class="mb-11 max-w-115 text-lg leading-relaxed text-bakery-muted">
 					Chez A K Boulangerie, on pétrit, on attend et on cuit sur place, tous les matins. Des
 					pains au levain, des viennoiseries au beurre et quelques douceurs de saison.
-				</div>
+				</p>
 				<div>
 					<a
 						href="#produits"
-						class="text-sans rounded-3xl bg-bakery-dark px-4 py-2 text-sm text-bakery-cream"
+						class="inline-block rounded-3xl bg-bakery-dark px-4 py-2 text-sm text-bakery-cream"
 					>
 						Découvrir nos produits
 					</a>
