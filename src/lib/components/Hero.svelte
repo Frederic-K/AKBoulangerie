@@ -3,7 +3,7 @@
 	import heroBreadImage from '$lib/assets/hero-bread.webp';
 </script>
 
-<section class="">
+<section id="accueil">
 	<Container>
 		<div class="grid grid-cols-2 gap-20 px-30 py-12">
 			<div>
