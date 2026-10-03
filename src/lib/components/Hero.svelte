@@ -38,7 +38,7 @@
 				<div
 					class="absolute top-12 -left-10 flex items-center gap-3.5 rounded-[18px] bg-bakery-cream px-5.5 py-4.5 shadow-lg"
 				>
-					<span class="size-2.5 animate-pulse rounded-full bg-bakery-accent"></span>
+					<span class="size-2.5 rounded-full bg-bakery-accent motion-safe:animate-pulse"></span>
 					<div>
 						<p class="text-[14px] font-bold text-bakery-dark">Sorti du four</p>
 						<p class="text-[13px] text-bakery-muted">chaque matin dès 6h30</p>
