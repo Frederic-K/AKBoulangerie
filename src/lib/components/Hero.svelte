@@ -16,8 +16,12 @@
 					</h1>
 				</div>
 			</div>
-			<div>
-				<img src={heroBreadImage} alt="miches au levain sur plan fariné" />
+			<div class="h-175 w-140 overflow-hidden rounded-3xl">
+				<img
+					src={heroBreadImage}
+					alt="miches au levain sur plan fariné"
+					class="h-full w-full object-cover"
+				/>
 			</div>
 		</div>
 	</Container>
