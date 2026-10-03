@@ -3,7 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import ScroolToTopBtn from '$lib/components/ScroolToTopBtn.svelte';
+	import ScrollToTopBtn from '$lib/components/ScrollToTopBtn.svelte';
 
 	let { children } = $props();
 </script>
@@ -13,5 +13,5 @@
 	<Header />
 	<main class="flex-1">{@render children()}</main>
 	<Footer />
-	<ScroolToTopBtn />
+	<ScrollToTopBtn />
 </div>
