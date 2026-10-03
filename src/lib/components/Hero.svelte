@@ -30,14 +30,14 @@
 						href="#horaires"
 						class="border-b border-[#c9b9a3] pb-0.75 text-[15px] font-semibold text-bakery-brown"
 					>
-						Voir les horaires →
+						Voir les horaires &rarr;
 					</a>
 				</div>
 			</div>
 			<div class="relative">
 				<div class="aspect-4/5 overflow-hidden rounded-[28px]">
 					<div
-						class="absolute top-12 -left-10 z-10 flex items-center gap-3.5 rounded-[18px] bg-bakery-cream px-5.5 py-4.5 shadow-lg"
+						class="absolute top-12 -left-10 z-10 flex items-center gap-3.5 rounded-[18px] bg-bakery-cream px-5.5 py-4.5 shadow-2xl"
 					>
 						<span class="size-2.5 rounded-full bg-bakery-accent"></span>
 						<div>
