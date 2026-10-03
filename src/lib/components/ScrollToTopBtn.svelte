@@ -14,7 +14,7 @@
 	<button
 		type="button"
 		aria-label="Retour en haut"
-		class="fixed right-4 bottom-4 rounded-full border border-bakery-dark px-2 py-2 text-bakery-dark hover:bg-bakery-muted hover:text-bakery-accent-soft"
+		class="fixed right-4 bottom-4 rounded-full border border-bakery-dark px-2 py-2 text-bakery-dark hover:bg-bakery-muted/50"
 		onclick={scrollToTop}
 	>
 		<svg

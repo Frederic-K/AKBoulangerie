@@ -10,16 +10,16 @@
 	let activeNavLink = $state('');
 </script>
 
-<header class="bg-bakery-cream">
+<header class="bg-bakery-cream px-5 py-7 lg:px-30">
 	<Container>
-		<div class="flex items-center justify-between gap-4 p-4">
+		<div class="flex items-center justify-between gap-4">
 			<a href={resolve('/')} class="flex items-center gap-3 font-serif">
 				<div
 					class="flex size-11 items-center justify-center rounded-full border-[1.5px] border-bakery-dark text-[22px] leading-none tracking-tighter text-bakery-dark"
 				>
 					<span>A</span><span class="text-bakery-accent italic">K</span>
 				</div>
-				<span class=" text-[26px] text-bakery-dark">A K Boulangerie</span>
+				<span class="text-[26px] text-bakery-dark">A K Boulangerie</span>
 			</a>
 			<nav class="relative grid grid-cols-4">
 				{#each navLinks as { href, label } (href)}
@@ -40,7 +40,7 @@
 			</nav>
 			<a
 				href="#nous-trouver"
-				class="rounded-full border border-bakery-dark px-4 py-2 text-bakery-dark hover:bg-bakery-muted hover:text-bakery-accent-soft"
+				class="rounded-full border border-bakery-brown px-5.5 py-2.5 text-sm font-semibold text-bakery-dark hover:bg-bakery-muted hover:text-bakery-accent-soft"
 			>
 				Nous trouver
 			</a>
