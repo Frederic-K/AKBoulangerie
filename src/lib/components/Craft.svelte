@@ -1,10 +1,10 @@
 <script>
-	import Container from './Container.svelte';
+	import Container from '$lib/components/Container.svelte';
 	import faconnageMiche from '$lib/assets/faconnage-miche.webp';
 	import { craftSteps } from '$lib/data/craft-steps.js';
 </script>
 
-<section id="savoir-faire" class="mx-6 rounded-[36px] bg-bakery-dark-section px-24 py-3">
+<section id="savoir-faire" class="mx-6 rounded-[36px] bg-bakery-dark-section px-24 py-30">
 	<Container>
 		<div class="mb-16 grid grid-cols-2 items-end gap-20">
 			<div>
