@@ -1,6 +1,7 @@
 <script>
 	import { products } from '$lib/data/products.js';
 	import Container from '$lib/components/Container.svelte';
+	import ProductCard from '$lib/components/ProductCard.svelte';
 
 	let categoryFilter = $state('Tous');
 	const categories = ['Tous', ...new Set(products.map((product) => product.category))];
@@ -45,11 +46,10 @@
 				{/each}
 			</div>
 		</div>
-		{#each filteredProducts as product (product.name)}
-			<div class="product-card">
-				<h3>{product.name}</h3>
-				<p>{product.description}</p>
-			</div>
-		{/each}
+		<div class="grid grid-cols-3 gap-x-8 gap-y-14">
+			{#each filteredProducts as product (product.name)}
+				<ProductCard {product} />
+			{/each}
+		</div>
 	</Container>
 </section>
