@@ -15,7 +15,7 @@
 
 <section id="produits" class="bg-bakery-cream px-5 pb-34 lg:px-30">
 	<Container>
-		<div class="flex items-end justify-between">
+		<div class="mb-14 flex items-end justify-between gap-10">
 			<div>
 				<div
 					class="mb-4.5 text-[13px] font-semibold tracking-[0.14em] text-bakery-accent uppercase"
@@ -49,7 +49,6 @@
 			<div class="product-card">
 				<h3>{product.name}</h3>
 				<p>{product.description}</p>
-				<p>{product.price} €</p>
 			</div>
 		{/each}
 	</Container>
