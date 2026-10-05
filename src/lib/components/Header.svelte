@@ -40,7 +40,7 @@
 			</nav>
 			<a
 				href="#nous-trouver"
-				class="rounded-full border border-bakery-brown px-5.5 py-2.5 text-sm font-semibold text-bakery-dark hover:bg-bakery-muted hover:text-bakery-accent-soft"
+				class="rounded-full border border-bakery-dark px-5.5 py-2.5 text-sm font-semibold text-bakery-dark hover:bg-bakery-dark hover:text-bakery-sand"
 			>
 				Nous trouver
 			</a>

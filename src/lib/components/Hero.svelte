@@ -11,11 +11,12 @@
 					Boulangerie artisanale &middot; Strasbourg
 				</div>
 
-				<h1 class="mb-8 font-serif text-[92px] leading-[0.98] tracking-[-0.02em]">
-					Le pain du jour, <em class="block text-bakery-brown">façonné à la main.</em>
+				<h1 class="mb-8 font-serif text-[92px] leading-[0.98] tracking-[-0.02em] text-bakery-dark">
+					<span class="font-medium">Le pain du jour,</span>
+					<em class="block text-bakery-brown">façonné à la main.</em>
 				</h1>
 
-				<p class="mb-11 max-w-115 text-lg leading-[1.65] text-bakery-muted">
+				<p class="mb-11 max-w-115 text-lg leading-[1.65] text-pretty text-bakery-muted">
 					Chez A K Boulangerie, on pétrit, on attend et on cuit sur place, tous les matins. Des
 					pains au levain, des viennoiseries au beurre et quelques douceurs de saison.
 				</p>
