@@ -76,5 +76,5 @@ Le menu et les boutons de la page pointent vers ces ancres. Comme le site est pr
 
 - La mise en page est calée sur un affichage bureau (maquette de 1440 px). Le responsive mobile n'est pas fait.
 - Les images ne sont pas optimisées (environ 2,4 Mo au total).
-- `npm run lint` signale une erreur ESLint (`svelte/no-navigation-without-resolve`) sur les liens d'ancres du menu, laissée volontairement : le site tient sur une seule page à la racine.
+- `npm run lint` signale une erreur ESLint (`svelte/no-navigation-without-resolve`) sur les liens d'ancres du menu, laissée volontairement : le site tient sur une sfeule page à la racine.
 - Les liens « Mentions légales », « Confidentialité » et Instagram sont des liens de remplissage.
