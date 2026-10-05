@@ -3,7 +3,7 @@
 	import heroBreadImage from '$lib/assets/hero-bread.webp';
 </script>
 
-<section id="accueil" class="bg-bakery-cream px-5 pt-12 pb-32 lg:px-30">
+<section id="accueil" class=" px-5 pt-12 pb-32 lg:px-30">
 	<Container>
 		<div class="grid grid-cols-2 items-center gap-20">
 			<div>
@@ -36,7 +36,7 @@
 			</div>
 			<div class="relative">
 				<div
-					class="absolute top-12 -left-10 flex items-center gap-3.5 rounded-[18px] bg-bakery-cream px-5.5 py-4.5 shadow-lg"
+					class="absolute top-12 -left-10 flex items-center gap-3.5 rounded-[18px] px-5.5 py-4.5 shadow-lg"
 				>
 					<span class="size-2.5 rounded-full bg-bakery-accent motion-safe:animate-pulse"></span>
 					<div>

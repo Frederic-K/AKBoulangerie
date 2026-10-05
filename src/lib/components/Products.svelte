@@ -14,7 +14,7 @@
 	});
 </script>
 
-<section id="produits" class="bg-bakery-cream px-5 pb-34 lg:px-30">
+<section id="produits" class=" px-5 pb-34 lg:px-30">
 	<Container>
 		<div class="mb-14 flex items-end justify-between gap-10">
 			<div>

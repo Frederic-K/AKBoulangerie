@@ -10,7 +10,7 @@
 	let activeNavLink = $state('');
 </script>
 
-<header class="bg-bakery-cream px-5 py-7 lg:px-30">
+<header class="px-5 py-7 lg:px-30">
 	<Container>
 		<div class="flex items-center justify-between gap-4">
 			<a href={resolve('/')} class="flex items-center gap-3 font-serif">

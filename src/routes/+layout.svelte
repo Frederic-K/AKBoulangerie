@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<div class="flex min-h-screen flex-col">
+<div class="flex min-h-screen flex-col bg-bakery-cream">
 	<Header />
 	<main class="flex-1">{@render children()}</main>
 	<Footer />
