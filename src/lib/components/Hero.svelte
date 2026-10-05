@@ -28,7 +28,7 @@
 					</a>
 					<a
 						href="#horaires"
-						class="border-b border-[#c9b9a3] pb-0.75 text-[15px] font-semibold text-bakery-brown"
+						class="border-b border-bakery-line-soft pb-0.75 text-[15px] font-semibold text-bakery-brown"
 					>
 						Voir les horaires &rarr;
 					</a>
