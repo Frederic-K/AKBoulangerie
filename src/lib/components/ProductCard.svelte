@@ -2,15 +2,16 @@
 	let { product } = $props();
 </script>
 
-<article class="overflow-hidden">
+<article>
 	<img
 		src={product.image}
 		alt={product.alt}
-		class="mb-5.5 aspect-4/3 w-full rounded-2xl object-cover"
+		loading="lazy"
+		class="mb-5.5 aspect-4/3 w-full rounded-[20px] object-cover"
 	/>
-	<span class="mb-2 text-xs font-medium tracking-[0.12em] text-bakery-accent uppercase"
-		>{product.category}</span
-	>
-	<h3 class="mb-2 font-serif text-3xl font-normal text-bakery-brown">{product.name}</h3>
-	<p class="text-sm leading-[1.6] text-bakery-muted">{product.description}</p>
+	<p class="mb-2 text-xs font-semibold tracking-[0.12em] text-bakery-accent uppercase">
+		{product.category}
+	</p>
+	<h3 class="mb-2 font-serif text-3xl leading-[1.1] text-bakery-dark">{product.name}</h3>
+	<p class="max-w-85 text-[15px] leading-[1.6] text-bakery-muted">{product.description}</p>
 </article>
