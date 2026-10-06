@@ -14,7 +14,7 @@
 				</div>
 
 				<h1
-					class="mb-5 font-serif text-[52px] leading-none tracking-[-0.02em] text-bakery-dark md:text-7xl lg:mb-8 lg:leading-[0.98] xl:text-[92px]"
+					class="mb-5 font-serif text-[52px] leading-none tracking-[-0.02em] text-bakery-dark md:text-7xl lg:mb-8 lg:text-6xl lg:leading-[0.98] xl:text-[92px]"
 				>
 					Le pain du jour, <em class="text-bakery-brown lg:block">façonné à la main.</em>
 				</h1>
@@ -50,7 +50,9 @@
 						<p class="text-[13px] text-bakery-muted">chaque matin dès 6h30</p>
 					</div>
 				</div>
-				<div class="aspect-4/5 overflow-hidden rounded-[22px] lg:rounded-[28px]">
+				<div
+					class="aspect-4/5 overflow-hidden rounded-[22px] md:aspect-4/3 lg:aspect-4/5 lg:rounded-[28px]"
+				>
 					<img
 						src={heroBreadImage}
 						alt="miches au levain sur plan fariné"
