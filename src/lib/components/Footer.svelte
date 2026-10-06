@@ -2,22 +2,26 @@
 	import Container from '$lib/components/Container.svelte';
 </script>
 
-<footer class="bg-bakery-dark px-5 pt-18 pb-10 text-bakery-on-dark lg:px-30">
+<footer
+	class="bg-bakery-dark px-5 pt-12 pb-8 text-bakery-on-dark md:px-10 lg:pt-18 lg:pb-10 xl:px-30"
+>
 	<Container>
-		<div class="flex items-start justify-between gap-10 border-b border-bakery-line-dark pb-14">
+		<div
+			class="flex flex-col gap-7 border-b border-bakery-line-dark pb-7 lg:flex-row lg:items-start lg:justify-between lg:gap-10 lg:pb-14"
+		>
 			<div>
-				<div class="mb-3 flex items-center gap-3 font-serif text-bakery-cream">
+				<div class="mb-3 flex items-center gap-2.5 font-serif text-bakery-cream lg:gap-3">
 					<div
-						class="flex size-11 items-center justify-center rounded-full border-[1.5px] border-bakery-cream text-[22px] leading-none tracking-tighter"
+						class="flex size-10 items-center justify-center rounded-full border-[1.5px] border-bakery-cream text-[20px] leading-none tracking-tighter lg:size-11 lg:text-[22px]"
 					>
 						<span>A</span><span class="text-bakery-accent-soft italic">K</span>
 					</div>
-					<span class="text-[30px]">A K Boulangerie</span>
+					<span class="text-[26px] lg:text-[30px]">A K Boulangerie</span>
 				</div>
 				<p class="text-[15px]">Boulangerie artisanale, Strasbourg.</p>
 			</div>
 
-			<div class="flex gap-20 text-[15px] leading-[1.8]">
+			<div class="flex flex-col gap-5 text-[15px] leading-[1.8] sm:flex-row sm:gap-12 lg:gap-20">
 				<address class="not-italic">
 					<h3 class="mb-2 font-semibold text-bakery-cream">Adresse</h3>
 					12 rue du Fournil<br />67000 Strasbourg
@@ -43,9 +47,11 @@
 			</div>
 		</div>
 
-		<div class="flex justify-between pt-7 text-[13px] text-bakery-on-dark/75">
+		<div
+			class="flex flex-col gap-2 pt-5 text-[13px] text-bakery-on-dark/75 lg:flex-row lg:justify-between lg:pt-7"
+		>
 			<p>&copy; 2026 A K Boulangerie &middot; Projet fictif</p>
-			<div class="flex gap-7">
+			<div class="flex gap-5 lg:gap-7">
 				<a href="#accueil" class="hover:text-bakery-cream">Mentions légales</a>
 				<a href="#accueil" class="hover:text-bakery-cream">Confidentialité</a>
 			</div>
