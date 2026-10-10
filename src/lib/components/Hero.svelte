@@ -3,40 +3,46 @@
 	import heroBreadImage from '$lib/assets/hero-bread.webp';
 </script>
 
-<section id="accueil" class="px-5 pt-12 pb-32 lg:px-30">
+<section id="accueil" class="px-5 pt-2 pb-18 md:px-10 lg:pt-12 lg:pb-32 xl:px-30">
 	<Container>
-		<div class="grid grid-cols-2 items-center gap-20">
+		<div class="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-20">
 			<div>
-				<div class="mb-7 text-[13px] font-semibold tracking-[0.14em] text-bakery-accent uppercase">
+				<div
+					class="mb-4 text-[12px] font-semibold tracking-[0.14em] text-bakery-accent uppercase lg:mb-7 lg:text-[13px]"
+				>
 					Boulangerie artisanale &middot; Strasbourg
 				</div>
 
-				<h1 class="mb-8 font-serif text-[92px] leading-[0.98] tracking-[-0.02em] text-bakery-dark">
-					Le pain du jour, <em class="block text-bakery-brown">façonné à la main.</em>
+				<h1
+					class="mb-5 font-serif text-[52px] leading-none tracking-[-0.02em] text-bakery-dark md:text-7xl lg:mb-8 lg:text-6xl lg:leading-[0.98] xl:text-[92px]"
+				>
+					Le pain du jour, <em class="text-bakery-brown lg:block">façonné à la main.</em>
 				</h1>
 
-				<p class="mb-11 max-w-115 text-lg leading-[1.65] text-pretty text-bakery-muted">
+				<p
+					class="mb-7 max-w-115 text-base leading-[1.6] text-pretty text-bakery-muted lg:mb-11 lg:text-lg lg:leading-[1.65]"
+				>
 					Chez A K Boulangerie, on pétrit, on attend et on cuit sur place, tous les matins. Des
 					pains au levain, des viennoiseries au beurre et quelques douceurs de saison.
 				</p>
-				<div class="flex items-center gap-7">
+				<div class="flex flex-col gap-7 lg:flex-row lg:items-center">
 					<a
 						href="#produits"
-						class="rounded-full bg-bakery-dark px-7.5 py-4.25 text-[15px] font-semibold text-bakery-cream"
+						class="rounded-full bg-bakery-dark px-7.5 py-4 text-center text-[15px] font-semibold text-bakery-cream lg:py-4.25"
 					>
 						Découvrir nos produits
 					</a>
 					<a
 						href="#horaires"
-						class="border-b border-bakery-line-soft pb-0.75 text-[15px] font-semibold text-bakery-brown"
+						class="border-b border-bakery-line-soft pb-0.75 text-[15px] font-semibold text-bakery-brown max-lg:hidden"
 					>
 						Voir les horaires &rarr;
 					</a>
 				</div>
 			</div>
-			<div class="relative">
+			<div class="relative order-first lg:order-0">
 				<div
-					class="absolute top-12 -left-10 flex items-center gap-3.5 rounded-[18px] bg-bakery-cream px-5.5 py-4.5 shadow-lg"
+					class="absolute top-12 -left-10 flex items-center gap-3.5 rounded-[18px] bg-bakery-cream px-5.5 py-4.5 shadow-lg max-lg:hidden"
 				>
 					<span class="size-2.5 rounded-full bg-bakery-accent motion-safe:animate-pulse"></span>
 					<div>
@@ -44,7 +50,9 @@
 						<p class="text-[13px] text-bakery-muted">chaque matin dès 6h30</p>
 					</div>
 				</div>
-				<div class="aspect-4/5 overflow-hidden rounded-[28px]">
+				<div
+					class="aspect-4/5 overflow-hidden rounded-[22px] md:aspect-4/3 lg:aspect-4/5 lg:rounded-[28px]"
+				>
 					<img
 						src={heroBreadImage}
 						alt="miches au levain sur plan fariné"
