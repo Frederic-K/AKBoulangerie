@@ -66,21 +66,38 @@
 					aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
 					onclick={() => (menuOpen = !menuOpen)}
 				>
-					<svg
-						viewBox="0 0 20 20"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="1.6"
-						stroke-linecap="round"
-						class="size-5"
-						aria-hidden="true"
-					>
-						{#if menuOpen}
-							<path d="M5 5l10 10M15 5L5 15" />
-						{:else}
-							<path d="M3.5 6h13M3.5 10h13M3.5 14h13" />
-						{/if}
-					</svg>
+					{#if menuOpen}
+						<!-- Icône Lucide « x » -->
+						<svg
+							class="size-5"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M18 6 6 18" />
+							<path d="m6 6 12 12" />
+						</svg>
+					{:else}
+						<!-- Icône Lucide « menu » -->
+						<svg
+							class="size-5"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M4 5h16" />
+							<path d="M4 12h16" />
+							<path d="M4 19h16" />
+						</svg>
+					{/if}
 				</button>
 			</div>
 		</div>
