@@ -40,7 +40,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="relative order-first lg:order-none">
+			<div class="relative order-first lg:order-0">
 				<div
 					class="absolute top-12 -left-10 flex items-center gap-3.5 rounded-[18px] bg-bakery-cream px-5.5 py-4.5 shadow-lg max-lg:hidden"
 				>
