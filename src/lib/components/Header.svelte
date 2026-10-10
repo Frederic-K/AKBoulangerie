@@ -98,28 +98,27 @@
 							<path d="M4 19h16" />
 						</svg> -->
 					<!-- {/if} -->
-					{#if menuOpen}
-						<span aria-hidden="true" class="flex h-3.5 w-5 flex-col justify-between">
-							<span
-								class={[
-									'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
-									menuOpen && 'translate-y-1.5 rotate-45'
-								]}
-							></span>
-							<span
-								class={[
-									'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
-									menuOpen && 'opacity-0'
-								]}
-							></span>
-							<span
-								class={[
-									'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
-									menuOpen && '-translate-y-1.5 -rotate-45'
-								]}
-							></span>
-						</span>
-					{/if}
+
+					<span aria-hidden="true" class="flex h-3.5 w-5 flex-col justify-between">
+						<span
+							class={[
+								'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
+								menuOpen && 'translate-y-1.5 rotate-45'
+							]}
+						></span>
+						<span
+							class={[
+								'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
+								menuOpen && 'opacity-0'
+							]}
+						></span>
+						<span
+							class={[
+								'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
+								menuOpen && '-translate-y-1.5 -rotate-45'
+							]}
+						></span>
+					</span>
 				</button>
 			</div>
 		</div>
