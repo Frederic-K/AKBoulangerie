@@ -1,5 +1,7 @@
 <script>
 	import { resolve } from '$app/paths';
+	import { slide } from 'svelte/transition';
+	import { prefersReducedMotion } from 'svelte/motion';
 	import Container from '$lib/components/Container.svelte';
 	let navLinks = [
 		{ href: '#accueil', label: 'Accueil' },
@@ -8,9 +10,20 @@
 		{ href: '#horaires', label: 'Horaires' }
 	];
 	let activeNavLink = $state('');
+	let menuOpen = $state(false);
+
+	function closeMenu() {
+		menuOpen = false;
+	}
+
+	function handleKeydown(event) {
+		if (event.key === 'Escape') closeMenu();
+	}
 </script>
 
-<header class="px-5 py-4.5 md:px-10 lg:py-7 xl:px-30">
+<svelte:window onkeydown={handleKeydown} />
+
+<header class="relative px-5 py-4.5 md:px-10 lg:py-7 xl:px-30">
 	<Container>
 		<div class="flex items-center justify-between gap-4">
 			<a href={resolve('/')} class="flex items-center gap-2.5 font-serif lg:gap-3">
@@ -21,7 +34,7 @@
 				</div>
 				<span class="text-[21px] text-bakery-dark lg:text-[26px]">A K Boulangerie</span>
 			</a>
-			<nav class="relative hidden grid-cols-4 lg:grid">
+			<nav aria-label="Navigation principale" class="relative hidden grid-cols-4 lg:grid">
 				{#each navLinks as { href, label } (href)}
 					<a
 						{href}
@@ -38,12 +51,67 @@
 					aria-hidden="true"
 				></div>
 			</nav>
+			<div class="flex items-center gap-2">
+				<a
+					href="#nous-trouver"
+					class="shrink-0 rounded-full border border-bakery-dark px-3.5 py-3 text-[13px] font-semibold text-bakery-dark hover:bg-bakery-dark hover:text-bakery-sand max-md:hidden lg:px-5.5 lg:py-2.5 lg:text-sm"
+				>
+					Nous trouver
+				</a>
+				<button
+					type="button"
+					class="flex size-11 items-center justify-center rounded-full border border-bakery-dark text-bakery-dark lg:hidden"
+					aria-expanded={menuOpen}
+					aria-controls="menu-mobile"
+					aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+					onclick={() => (menuOpen = !menuOpen)}
+				>
+					<svg
+						viewBox="0 0 20 20"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.6"
+						stroke-linecap="round"
+						class="size-5"
+						aria-hidden="true"
+					>
+						{#if menuOpen}
+							<path d="M5 5l10 10M15 5L5 15" />
+						{:else}
+							<path d="M3.5 6h13M3.5 10h13M3.5 14h13" />
+						{/if}
+					</svg>
+				</button>
+			</div>
+		</div>
+	</Container>
+
+	{#if menuOpen}
+		<div
+			id="menu-mobile"
+			class="absolute inset-x-0 top-full z-40 bg-bakery-cream px-5 pb-6 shadow-lg md:px-10 lg:hidden"
+			transition:slide={{ duration: prefersReducedMotion.current ? 0 : 200 }}
+		>
+			<nav aria-label="Navigation mobile">
+				<ul>
+					{#each navLinks as { href, label } (href)}
+						<li class="border-b border-bakery-line-soft/50">
+							<a
+								{href}
+								class="block py-3.5 text-lg font-medium text-bakery-dark hover:text-bakery-accent"
+								onclick={closeMenu}>{label}</a
+							>
+						</li>
+					{/each}
+				</ul>
+			</nav>
 			<a
 				href="#nous-trouver"
-				class="shrink-0 rounded-full border border-bakery-dark px-3.5 py-3 text-[13px] font-semibold text-bakery-dark hover:bg-bakery-dark hover:text-bakery-sand lg:px-5.5 lg:py-2.5 lg:text-sm"
+				class="mt-6 block rounded-full bg-bakery-dark py-3.75 text-center text-[15px] font-semibold text-bakery-cream md:hidden"
+				onclick={closeMenu}
 			>
 				Nous trouver
 			</a>
 		</div>
-	</Container>
+	{/if}
 </header>
