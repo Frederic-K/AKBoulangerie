@@ -66,9 +66,9 @@
 					aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
 					onclick={() => (menuOpen = !menuOpen)}
 				>
-					{#if menuOpen}
-						<!-- Icône Lucide « x » -->
-						<svg
+					<!-- {#if menuOpen} -->
+					<!-- Icône Lucide « x » -->
+					<!-- <svg
 							class="size-5"
 							viewBox="0 0 24 24"
 							fill="none"
@@ -80,10 +80,10 @@
 						>
 							<path d="M18 6 6 18" />
 							<path d="m6 6 12 12" />
-						</svg>
-					{:else}
-						<!-- Icône Lucide « menu » -->
-						<svg
+						</svg> -->
+					<!-- {:else} -->
+					<!-- Icône Lucide « menu » -->
+					<!-- <svg
 							class="size-5"
 							viewBox="0 0 24 24"
 							fill="none"
@@ -96,7 +96,29 @@
 							<path d="M4 5h16" />
 							<path d="M4 12h16" />
 							<path d="M4 19h16" />
-						</svg>
+						</svg> -->
+					<!-- {/if} -->
+					{#if menuOpen}
+						<span aria-hidden="true" class="flex h-3.5 w-5 flex-col justify-between">
+							<span
+								class={[
+									'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
+									menuOpen && 'translate-y-1.5 rotate-45'
+								]}
+							></span>
+							<span
+								class={[
+									'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
+									menuOpen && 'opacity-0'
+								]}
+							></span>
+							<span
+								class={[
+									'h-0.5 rounded-full bg-current transition duration-200 motion-reduce:transition-none',
+									menuOpen && '-translate-y-1.5 -rotate-45'
+								]}
+							></span>
+						</span>
 					{/if}
 				</button>
 			</div>
