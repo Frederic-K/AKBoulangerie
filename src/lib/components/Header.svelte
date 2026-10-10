@@ -60,7 +60,7 @@
 				</a>
 				<button
 					type="button"
-					class="flex size-11 items-center justify-center rounded-full border border-bakery-dark text-bakery-dark lg:hidden"
+					class="flex size-11 items-center justify-center rounded-full border border-bakery-dark text-bakery-dark md:hidden"
 					aria-expanded={menuOpen}
 					aria-controls="menu-mobile"
 					aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
