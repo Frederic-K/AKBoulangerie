@@ -54,13 +54,13 @@
 			<div class="flex items-center gap-2">
 				<a
 					href="#nous-trouver"
-					class="shrink-0 rounded-full border border-bakery-dark px-3.5 py-3 text-[13px] font-semibold text-bakery-dark hover:bg-bakery-dark hover:text-bakery-sand max-md:hidden lg:px-5.5 lg:py-2.5 lg:text-sm"
+					class="shrink-0 rounded-full border border-bakery-dark px-5.5 py-2.5 text-sm font-semibold text-bakery-dark hover:bg-bakery-dark hover:text-bakery-sand max-lg:hidden"
 				>
 					Nous trouver
 				</a>
 				<button
 					type="button"
-					class="flex size-11 items-center justify-center rounded-full border border-bakery-dark text-bakery-dark md:hidden"
+					class="flex size-11 items-center justify-center rounded-full border border-bakery-dark text-bakery-dark lg:hidden"
 					aria-expanded={menuOpen}
 					aria-controls="menu-mobile"
 					aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
@@ -145,7 +145,7 @@
 			</nav>
 			<a
 				href="#nous-trouver"
-				class="mt-6 block rounded-full bg-bakery-dark py-3.75 text-center text-[15px] font-semibold text-bakery-cream md:hidden"
+				class="mt-6 block rounded-full bg-bakery-dark py-3.75 text-center text-[15px] font-semibold text-bakery-cream"
 				onclick={closeMenu}
 			>
 				Nous trouver
